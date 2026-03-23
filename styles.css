@@ -1,0 +1,61 @@
+/* CSS for basic animations and utilities not fully covered by Tailwind */
+
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #0ea5e9; /* primary */
+    transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+@keyframes pulse-slow {
+    0%, 100% { transform: scale(1); opacity: 0.15; }
+    50% { transform: scale(1.05); opacity: 0.3; }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 5s ease-in-out infinite;
+}
+
+/* Base states for scroll animations */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+}
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+.active {
+    opacity: 1 !important;
+    transform: translate(0) !important;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
