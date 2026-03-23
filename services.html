@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | KT Interprises</title>
+    <meta name="description" content="View the specialized supply categories of KT Interprises, including Corporate Solutions, PPE, Food & Beverage, and Fresh Proteins.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9', // Sky Blue 500
+                        primaryDark: '#0369a1', // Sky Blue 700
+                        secondary: '#22c55e', // WhatsApp Green
+                        dark: '#0f172a',    // Slate 900
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-extrabold text-2xl tracking-tight text-dark">KT<span class="text-primary">.</span> Interprises</span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors hover-underline">Home</a>
+                    <a href="services.html" class="text-sm font-bold text-primary transition-colors">Services</a>
+                    <a href="index.html#contact" class="px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-full shadow hover:bg-primaryDark transition-all transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <div class="pt-32 pb-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-dark tracking-tight mb-4">Our Specialized Supply Categories</h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto font-light">From General Supplies to High-Expertise Provisions</p>
+        </div>
+    </div>
+
+    <!-- Categories Grid -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-12">
+                
+                <!-- Category 1 -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 lg:gap-16 items-center reveal">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-32 h-32 rounded-full bg-blue-50 flex items-center justify-center text-primary text-5xl border-[8px] border-white shadow-lg">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-2xl font-bold text-dark mb-4 border-b border-slate-100 pb-4">I. Corporate & Office Solutions</h2>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">IT & Tech:</strong> Laptops, printers, servers, and genuine consumables (toners/ink).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Stationery:</strong> Full-scale office supplies and branded corporate gifts.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Furniture:</strong> Ergonomic chairs, workstations, and filing systems.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col md:flex-row-reverse gap-8 lg:gap-16 items-center reveal delay-100">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-32 h-32 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 text-5xl border-[8px] border-white shadow-lg">
+                            <i class="fa-solid fa-hard-hat"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-2xl font-bold text-dark mb-4 border-b border-slate-100 pb-4">II. Industrial & Safety (PPE)</h2>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Safety Gear:</strong> Helmets, high-vis vests, safety shoes, and gloves.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Hardware:</strong> Hand tools, electrical fittings, and plumbing materials.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Maintenance:</strong> Lubricants, cleaning chemicals, and industrial detergents.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 lg:gap-16 items-center reveal delay-200">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-32 h-32 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 text-5xl border-[8px] border-white shadow-lg">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-2xl font-bold text-dark mb-4 border-b border-slate-100 pb-4">III. Food, Beverages & Pantry</h2>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Pantry Essentials:</strong> Premium tea/coffee, sugar, milk, and bottled mineral water.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Snacks:</strong> Bulk biscuits, dry fruits, and confectionery for meetings.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Grains:</strong> High-quality rice, flour, pulses, and cooking oils.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col md:flex-row-reverse gap-8 lg:gap-16 items-center reveal delay-300">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-32 h-32 rounded-full bg-red-50 flex items-center justify-center text-red-500 text-5xl border-[8px] border-white shadow-lg">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-2xl font-bold text-dark mb-4 border-b border-slate-100 pb-4">IV. Fresh Proteins (Meat & Poultry)</h2>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Beef & Mutton:</strong> Fresh, grass-fed cuts (Undercut, Boneless, Keema).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Poultry:</strong> Whole dressed chicken, breast fillets, and drumsticks.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-secondary mt-1"></i>
+                                <span><strong class="text-slate-800">Custom Cuts:</strong> Butchery services tailored to your kitchen’s specifications.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance -->
+    <section class="border-y border-slate-200 bg-dark text-white py-24 object-cover relative overflow-hidden">
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-10">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E')]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <i class="fa-solid fa-shield-halved text-5xl text-primary mb-6"></i>
+                <h3 class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl mb-4">
+                    Quality Assurance & Compliance
+                </h3>
+                <p class="text-lg text-slate-400 font-light">
+                    At KT Interprises, we don't just deliver goods; we deliver peace of mind.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors reveal">
+                    <i class="fa-solid fa-certificate text-secondary text-2xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Halal Certified</h4>
+                    <p class="text-slate-400 text-sm">100% Shariah-compliant manual slaughtering (Zabiha).</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors reveal delay-100">
+                    <i class="fa-solid fa-snowflake text-sky-400 text-2xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Cold Chain Logistics</h4>
+                    <p class="text-slate-400 text-sm">Temperature-controlled transport (0°C to 4°C) for all fresh proteins.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors reveal delay-200">
+                    <i class="fa-solid fa-check-double text-primary text-2xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Vetted Vendors</h4>
+                    <p class="text-slate-400 text-sm">We source only from ISO-certified and tax-compliant manufacturers.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors reveal delay-300">
+                    <i class="fa-solid fa-magnifying-glass text-yellow-500 text-2xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Inspection Policy</h4>
+                    <p class="text-slate-400 text-sm">Every delivery undergoes a 3-point quality check before reaching the client.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="py-16 bg-primary text-center">
+        <h3 class="text-2xl font-bold text-white mb-6">Ready to initiate an order?</h3>
+        <a href="index.html#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-xl shadow-lg hover:bg-slate-50 transition-all transform hover:-translate-y-1">
+            Contact Operations <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center">
+                    <span class="font-extrabold text-xl tracking-tight text-dark">KT<span class="text-primary">.</span> Interprises</span>
+                </div>
+                <p class="text-sm text-slate-500 font-medium tracking-wide text-center">
+                    &copy; <script>document.write(new Date().getFullYear())</script> KT Interprises. All rights reserved.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/923001654726" target="_blank" class="w-10 h-10 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-secondary hover:text-white hover:border-secondary transition-all cursor-pointer">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
