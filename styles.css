@@ -59,3 +59,75 @@
     transform: translate(0) !important;
     transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
+/* Print / PDF Export Styles */
+@media print {
+    html {
+        scroll-behavior: auto !important;
+    }
+    
+    /* Hide web-only UI elements */
+    nav, footer, .print-hide, .animate-bounce-slow, .animate-pulse-slow {
+        display: none !important;
+    }
+
+    /* Convert dark sections to solid printable white */
+    body, section, .bg-dark, .bg-primary, .bg-slate-50 {
+        background: #ffffff !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Text color overrides */
+    h1, h2, h3, h4, p, span, div, li, a {
+        color: #000000 !important;
+        text-shadow: none !important;
+        background-clip: border-box !important;
+        -webkit-text-fill-color: #000 !important;
+    }
+    
+    /* Simplify containers and borders */
+    .bg-white, .rounded-2xl, .rounded-3xl {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        break-inside: avoid; /* Prevent clipping across pages */
+        page-break-inside: avoid;
+        margin-bottom: 20px !important;
+    }
+
+    /* Force layouts to stack nicely vertically */
+    .flex-col.md\:flex-row, .flex-col.md\:flex-row-reverse, .grid {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    .w-1\/2, .md\:w-1\/3, .md\:w-2\/3 {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+        text-align: left !important;
+    }
+    
+    /* Force animations to finished state */
+    .reveal, .slide-in-right, .slide-in-left, .slide-in-bottom {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* Re-size giant texts down for paper */
+    .text-5xl, .text-6xl, .text-7xl {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .pt-32, .pb-20, .py-24, .py-20 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Page Setup */
+    @page {
+        margin: 1.5cm;
+        size: A4 portrait;
+    }
+}
